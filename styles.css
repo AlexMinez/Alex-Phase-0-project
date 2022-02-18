@@ -7,9 +7,11 @@ body {
 h1 {
     font-size: 60px;
     font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 5px 10px purple;
 }
 h2 {
     font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 5px 10px purple;
 }
 .content {
     background: rgba(253, 252, 251, 0.8);
@@ -25,11 +27,13 @@ h2 {
     float: right;
     border-radius: 50%;
     border: 2px solid purple;
+    margin-right: 2px;
 }
 #truck {
     float: left;
-    border-radius: 50%;
+    border-radius: 8px;
     border: 2px solid purple;
+    margin-left: 5px;
 }
 
 .para {
@@ -69,4 +73,38 @@ footer {
 }
 h4 {
     padding: 20px;
+}
+.links {
+    border-radius: 50%;
+    border: 2px solid purple;
+    overflow: hidden;
+    text-decoration: none;
+}
+.links:hover {
+    opacity: 0.5;
+
+}
+.sidebar {
+    height: 100%;
+    width: 110px;
+    position: fixed;
+    background-color: black;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    text-align: left;   
+}
+.sidebar a:hover {
+    color: white;
+}
+.sidebar:hover {
+    opacity: 0.5;
 }
